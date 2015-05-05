@@ -1,0 +1,12 @@
+valorHora = float(input('\nQuanto voce ganha por hora: '))
+qtHoras = float(input('Quantas horas voce trabalha por mes: '))
+bruto = valorHora * qtHoras
+ir = bruto * (11/100)
+inss = bruto * (8/100)
+sindicato = bruto * (5/100)
+salario = bruto - (ir + inss + sindicato)
+print('\nSalario bruto R$ %.2f ' %bruto)
+print('Imposto de renda R$ %.2f ' %ir)
+print('INSS R$ %.2f ' %inss)
+print('Sindicato R$ %.2f ' %sindicato)
+print('Salalio liquido R$ %.2f ' %salario)
